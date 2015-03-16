@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="project2.css">
+  <title>Intro to Programming - Project I</title>
+</head>
+<body>
+  <h1>Important Concepts: Telling Computers What to Do</h1>
+  <h1>Lesson 1</h1>
+    <div class="lesson">
+      <h2>Introduction to "serious" programming</h2>
+    </div>
+      <div class="concept">
+        <div class="concept-title">Computer</div>
+          <p>
+            A computer is an universal machine that can be programmed to do essentially any computation.  
+          </p>
+        <div class="concept-title">Computer Program</div>
+          <p>
+            A computer program is a precise sequence of steps/links. Web browsers, games, mobile apps, and simple print statements are all examples of computer programs. 
+          </p>
+        <div class="concept-title">Programming Languages</div>
+          <p>
+            A programming language is what programmers use to tell a computer what to do. Python, Perl, Ruby are examples of programming languages.  
+          </p>  
+        <div class="concept-title">Python</div>
+          <p>
+            Python is a programming language. It is an interpreter, which means it runs programs, interprets them, and then executes them. Python runs the programs in a language the computer can understand directly.  
+          </p>
+        <div class="concept-title">Grammar</div>
+          <p>
+            Just like human languages have grammar, programming languages also do. A grammar is a specification of what is "correct" and what is "incorrect." In languages like English, people can often make sense of sentences that aren't technically "correct," due to experience and intuition. but computers do not have this capability. This means we have to write code that is exactly "correct" according to the Python interpreter, otherwise our code won't run.
+          </p>
+        <div class="concept-title">Python Expressions</div>
+          <p>
+            A Python "expression" is a legal Python statement. For example: <span class="code">print 1 + 1</span> is a valid expression, but <span class="code">print 1 +</span> (without a number at the end) is not. <a href="https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3527838955/e-48704311/m-48736065" target="_blank">This video</a> does a good job of explaining the Python grammar for "expressions".
+          </p>
+    <h1>Lesson 2</h1>
+    <div class="lesson">
+      <h2>Variables and Strings</h2>
+    </div>
+      <div class="concept">
+        <div class="concept-title">What is a variable in Python?</div>
+          <p>
+            Is method of using names to refer to a value. For example if <span class="code">sample_variable</span> is a variable assigned with a value of "10", then the following command would display "10":
+            <span class="code"> print sample_variable</span>.
+          </p>
+        <div class="concept-title">What does it meant to assign a value to a variable? How is it done?</div>
+          <p>
+            The code to assign a variable would look like the following:<br>
+            <span class="code">sample_variable = 10</span>.<br>
+            The value of variables can be re-assigned. 
+          </p>
+        <div class="concept-title">What's the difference between what the equals sign = means in 2+3=5 and my_variable=5?</div>
+          <p>
+            In 2+3=5, it stands for equals or 'same as' as in the arithmetic definition.
+            In my_variable=5, it means "my_variable" is assigned the value of 5. 
+          </p>
+        <div class="concept-title">What are some ways that variables are useful?</div>
+          <p>
+          Variables can be useful to programmers in many ways:
+          </p>
+          <ul>
+            <li>They improve code readability by using names that make sense to humans.</li>
+            <li>They give us a way to store the value of important data.</li>
+            <li>They give us a way to change the value of something (like in the line <span class="code">days = days-1</span></li>
+          </ul>
+        <div class="concept-title">What is the difference between 2 + 2 and "2" + "2"?</div>
+          <p>
+            In Python, <span class="code">2</span> is a number while <span class="code">"2"</span> is a string.
+          </p>
+          <p>
+            The code <span class="code">2 + 2</span> would give <span class="code">4</span>.
+          </p>
+          <p>
+            The code <span class="code">"2" + "2"</span> would give <span class="code">"22"</span>.
+          </p>
+    <h1>Lesson 3</h1>
+    <div class="lesson">
+      <h2>Input -> Function -> Output</h2>
+    </div>
+      <div class="concept">
+        <div class="concept-title">What is a function / procedure?</div>
+          <p>
+            A function is something that accepts input does an action on it and produces output. For example a function named add_together might take 2 number values as input and output the total value when added together.
+          </p>
+          <div class="concept-title">What is the difference between making and using a function?</div>
+          <p>
+            When making a function you are defining it. The line of code for a function begins with <b>def</b>, giving the function a name, then the function parameters in parentheses. The parameters will have values that are assigned when the function is used or called.
+            <br>
+            Below is an example of a function:
+            <br>
+            <br>
+            <span class="code">
+                <span class="indent">def add_together(n):</span><br>
+                <span class="indent">total = n + n</span><br>
+                <span class="indent">return total</span><br>
+            </span>
+            <br>
+            To use the function above, we can use the value of "2".
+            <br>
+            <span class="code">
+                <span class="indent">print add_together(2)</span><br>
+                <span class="indent">>>>4</span>
+            </span>
+          </p>
+        <div class="concept-title">How do functions help programmers avoid repetition?</div>
+          <p>
+            A function is a tool that developers can write once and reuse/reference in other parts of the code. This prevents the programmer from having to write the same logic again if it is needed.
+          </p>
+        <div class="concept-title">What happens if a function doesn't have a return statement?</div>
+          <p>
+            The <b>return</b> keyword tells Python what to output. If the <b>return</b> is not used, the output of your function cannot be printed.  Output will display as <b>None</b>
+          </p>
+    <h1>Lesson 4</h1>
+    <div class="lesson">
+      <h2>Decision and Repetition: If and While</h2>
+    </div>
+      <div class="concept">
+        <div class="concept-title">Procedural Thinking</div>
+          <p>
+            Decision making and repetition. IF statements control which code gets executed when. WHILE loops make code that perfoms the same task many times.
+          </p>
+        <div class="concept-title">Making Decisions</div>
+          <p>
+            Comparision operations &lt and &gt and == are some examples of making code behave differently based on decisions. The output of a comparision is a boolean value (true/false).
+            <br><br>
+            &lt  &gt &lt=
+            <br>
+            &ltnumber&gt&ltoperator&gt
+          </p>
+        <div class="concept-title">If Statements</div>
+          <p>
+            If statements allow us to change the behavior of code depending on the outcome of a comparision.
+            <br><br>
+            if &ltTest Expressions&gt:
+              &ltBlock&gt
+          </p>
+        <div class="concept-title">Or statements</div>
+          <p>
+            Example of use of OR below:
+            <br><br>
+            def is_friend(name):
+              return name[0] == 'D' or name[0] == 'N'
+          </p>
+        <div class="concept-title">Break statements</div>
+          <p>
+            Break statements allow us to stop the loop even while the test condition is true. 
+            <br><br>
+            while &ltTest Expression&gt:
+              &ltCode&gt
+              if &ltBreak Text&gt:
+                break
+              &ltMore Code&gt
+          </p>
+
+    <h1>Lesson 5</h1>
+    <div class="lesson">
+      <h2>Structured Data: Lists and For Loops</h2>
+    </div>
+      <div class="concept">
+        <div class="concept-title">Lists</div>
+          <p>
+            Lists are another method to store data in a more structured object. Nested Lists are lists, contained inside another list separated by another set of [].
+          </p>
+        <div class="concept-title">For Loops</div>
+          <p>
+            For Loops are a type of loop that iterates the same logic over on different parts of the structured data.
+          </p>
+        <div class="concept-title">Mutation</div>
+          <p>
+            Mutation is changing the value of a string after we've have already created/defined it as a variable. Redefining the variable mutates it to refer to the new value, however there is no way to refer to the original value.
+          </p>
+        <div class="concept-title">Aliasing</div>
+          <p>
+            Aliasing is two different ways to refer to the same object. For example two variables such as S and T could refer to the same object and if the value of S was changed, it would change the value of T also.
+          </p>
+        <div class="concept-title">List Operations</div>
+          <p>
+            The append operator is an example. It will add a new element to the end of a list, essentially mutating the list it is operating on.
+            <br> <br>  
+            &ltlist&gt.append(&ltelement&gt)
+            <br><br>
+            The plus operator is another one. It contatenates two lists together. It does not mutate the original list, it creates a new one.
+            <br><br>
+            &ltlist&gt + &ltlist&gt
+            <br><br>
+            The len operator len(&ltlist&gt) provides the length or number of elements of a list it is passed to. It can also calculate the number of characters in a string.
+            <br><br>
+            The Index operator &ltlist&gt.index(&ltvalue&gt) outputs the position of the value in the list.
+          </p>
+        <div class="concept-title">For Loops</div>
+          <p>
+            While loops are followed by a test expression. And if that test is true to execute the block. At the end of the block, go back to the while loop and repeat until test is False. <br>
+            For loops like the one below mean that for each element in the list, we're going to assign that element to the name and evaluate the block.
+
+            for &ltname&gt in &ltlist&gt:
+                 &ltBlock&gt
+          </p>
